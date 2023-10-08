@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    width: 50vw;
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+    "Yapilacaklar Yapilacaklar Yapilacaklar"
+    "Pazartesi Sali Çarşamba"
+    "Perşembe Cuma Cumartesi"
+    ;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+*{
+    background-color: rgb(0, 255, 81);
+}
+body>*{
+    background-color: rgb(237, 100, 118);
+}
+div:nth-child(1){
+    grid-area: Yapilacaklar;
+}
+div:nth-child(2){
+    grid-area: Pazartesi;
+}
+div:nth-child(3){
+    grid-area: Sali;
+}
+div:nth-child(4){
+    grid-area: Çarşamba;
+}
+div:nth-child(5){
+    grid-area: Perşembe;
+}
+div:nth-child(6){
+    grid-area: Cuma;
+}
+div:nth-child(7){
+    grid-area: Cumartesi;
+}
